@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1 class="header__title">Notes App</h1>
+        <h2 class="header__subtitle">Take notes and never forget</h2>
+      </div>
+    </div>
+    <div class="actions">
+        <div class="actions__container actions__container--spaced">
+            <a href="../notes-app/index.html">Home</a>
+            <span> Last Edited: <span id="editedTime"></span></span>
+        </div>
+    </div>
+
+    <div class="container">
+      <input id="titleOfNote" class="title-input" type="text" placeholder="Edit Title" />
+      <textarea id="bodyOfNote" class="body-input" placeholder="Edit Body"></textarea>
+      <button id="removeNote" class="button button--secondary">Remove Note</button>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+    <script src="scripts/notes-functions.js"></script>
+    <script src="scripts/notes-edit.js"></script>
+  </body>
+</html>
